@@ -4,6 +4,9 @@
  # Why we made this
  We made this to have screenreader support for reading out color names on [remembertostand.com](https://remembertostand.com/) (Turn on screenreader and press C when on the site to hear it in action)
  
+ # Credits
+ * The hexToRGB and RGBToHSL functions used as part of this plugin are from https://css-tricks.com/converting-color-spaces-in-javascript/
+ 
  #Demo
  * Interactive demo: [naevner.com](https://naevner.com/)
  * Naevner.js in use on a website — interactive demo: [Naevner.js in use on remembertostand.com](https://remembertostand.com/)
