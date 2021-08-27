@@ -8,7 +8,7 @@
  * The hexToRGB and RGBToHSL functions used as part of this plugin are from https://css-tricks.com/converting-color-spaces-in-javascript/
  
  # Demo
- * Interactive demo: [naevner.com](https://naevner.com/)
+ * Interactive demo of Naevner.js: [naevner.com](https://naevner.com/)
  * Naevner.js in use on a website — interactive demo: [Naevner.js in use on remembertostand.com](https://remembertostand.com/)
  * Naevner.js in use on a website — video demonstration of screenreader usage: [Naevner.js screenreader demo video](https://youtu.be/8kn6D_BuHYg)
  
