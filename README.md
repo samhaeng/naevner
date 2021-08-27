@@ -32,6 +32,11 @@
  naevner("#2F5651"); //Returns: “dark, faded turquoise”
  naevner("#3F0548"); //Returns: “dark, clear, purpleish magenta”
  ```
+ # Accepted values
+ * 3-digit hex with preceding #-sign — e.g. `#f00`
+ * 3-digit hex without preceding #-sign — e.g. `f00`
+ * 6-digit hex with preceding #-sign — e.g. `#ff0000`
+ * 6-digit hex without preceding #-sign — e.g. `ff0000`
 
  # Questions or advice
  If you have questions or advice, feel free to open an issue on this repo. Thank you!
