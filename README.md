@@ -44,7 +44,7 @@
   naevner(color, approximationSuffix);
   ```
 
-  Examples:
+  approximationSuffix examples:
   ```javascript
   naevner("#3F0548");            //Returns: “dark, clear, purpleish magenta”
   naevner("#3F0548", "-tinted"); //Returns: “dark, clear, purple-tinted magenta”
