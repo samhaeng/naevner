@@ -1,5 +1,5 @@
 /*! naevner v1.0.0 | MIT */
-const naevner = (color, wordType="adjective", approximationSuffix="ish") => {
+const naevner = (color, approximationSuffix="ish") => {
   let colorInRGB,
       colorInHSL,
       lightness,
@@ -212,11 +212,7 @@ const naevner = (color, wordType="adjective", approximationSuffix="ish") => {
 
   //For the last two groups below, we need to construct a natural-language sentence that can handle multiple adjectives with proper punctuation
   lightnessToPrint = lightness ? lightness + ", " : "";
-  if(wordType == "noun"){ //noun
-    saturationToPrint = hueNuance ? saturation + ", " : saturation + " ";
-  } else{ //adjective
-    saturationToPrint = hueNuance ? saturation + ", " : saturation + " ";
-  }
+  saturationToPrint = hueNuance ? saturation + ", " : saturation + " ";
   hueWithNuanceToPrint = hueNuance ? hueNuance + approximationSuffixToPrint + " " + hue : hue;
 
   //Is monochrome
