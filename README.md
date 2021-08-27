@@ -6,8 +6,8 @@
  
  #Demo
  * Interactive demo: [naevner.com](https://naevner.com/)
- * In use — interactive demo: [remembertostand.com](https://remembertostand.com/)
- * In use — video demonstration of screenreader usage: https://youtu.be/8kn6D_BuHYg
+ * Naevner.js in use on a website — interactive demo: [Naevner.js in use on remembertostand.com](https://remembertostand.com/)
+ * Naevner.js in use on a website — video demonstration of screenreader usage: [Naevner.js screenreader demo video](https://youtu.be/8kn6D_BuHYg)
  
  # How to setup
  Include the minified code: 
@@ -31,4 +31,4 @@
  ```
 
  # Questions or advice
- If you have questions or advice, feel free to open an issue on this repo. Thanks!
+ If you have questions or advice, feel free to open an issue on this repo. Thank you!
