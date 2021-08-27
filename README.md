@@ -1,5 +1,5 @@
 # Naevner.js — color descriptions from hex codes
- Javascript plugin that provides natural language descriptions of hex color codes
+ Javascript plugin that provides natural language descriptions of hex color codes.
  
  # Why we made this
  We made this to have screenreader support for reading out color names on [remembertostand.com](https://remembertostand.com/) (Turn on screenreader and press C when on the site to hear it in action)
