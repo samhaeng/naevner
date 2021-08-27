@@ -10,7 +10,7 @@
  
  ## Demo
  * Interactive demo of Naevner.js: [Nævner (naevner.com)](https://naevner.com/)
- * Naevner.js in use on a website — interactive demo: [Naevner.js in use on remembertostand.com](https://remembertostand.com/)
+ * Naevner.js in use on a website — interactive demo: [Naevner.js in use on remembertostand.com](https://remembertostand.com/) (Turn on screenreader and press C to change interface colors to hear it in action)
  * Naevner.js in use on a website — video demonstration of screenreader usage: [Naevner.js screenreader demo video](https://youtu.be/8kn6D_BuHYg)
  
  ## Getting started
