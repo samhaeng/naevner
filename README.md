@@ -19,9 +19,6 @@
  ## How to use
  ```javascript
  naevner(color);
- // Color input should be a string containing a
- // hex 3-digit or 6-digit hex color code, with
- // or without a preceding #-sign.
  ```
  
  ## Examples
@@ -49,9 +46,9 @@
 
   Examples:
   ```javascript
-  // naevner("#3F0548");            //Returns: “dark, clear, purple**ish** magenta”
-  // naevner("#3F0548", "-tinted"); //Returns: “dark, clear, purple**-tinted** magenta”
-  // naevner("#3F0548", "-like");   //Returns: “dark, clear, purple**-like** magenta”
+  naevner("#3F0548");            //Returns: “dark, clear, purpleish magenta”
+  naevner("#3F0548", "-tinted"); //Returns: “dark, clear, purple-tinted magenta”
+  naevner("#3F0548", "-like");   //Returns: “dark, clear, purple-like magenta”
   ```
 
  # Questions, ideas and advice
