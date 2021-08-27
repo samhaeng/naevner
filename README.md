@@ -12,8 +12,8 @@
  * Naevner.js in use on a website — interactive demo: [Naevner.js in use on remembertostand.com](https://remembertostand.com/)
  * Naevner.js in use on a website — video demonstration of screenreader usage: [Naevner.js screenreader demo video](https://youtu.be/8kn6D_BuHYg)
  
- # How to setup
- Include the minified code: 
+ # Getting started
+ Include the [minified code](https://github.com/samhaeng/naevner/blob/main/naevner-min.js)
  
  # How to use
  ```javascript
