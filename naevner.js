@@ -1,3 +1,4 @@
+/*! naevner v1.0.0 | MIT */
 const naevner = (color, wordType="adjective", approximationSuffix="ish") => {
   let colorInRGB,
       colorInHSL,
