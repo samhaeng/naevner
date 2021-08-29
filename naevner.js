@@ -128,30 +128,30 @@ const naevner = (color, approximationSuffix="ish") => {
   else if ( numberIsInRange(l, "98-100") ) { lightness = "white" }
 
   //determine hue term
-  if      ( (numberIsInRange(h, "0-5")) || (numberIsInRange(h, "346-360")) ) {
+  if      ( (numberIsInRange(h, "0-3")) || (numberIsInRange(h, "346-360")) ) { //red
     
     if ( (saturation !== "grey") && (lightness !== "black") && (l < 20 || s < 40) ){ hue = "brown"; hueNuance="red" }
     else if ( l < 30 || s < 50 ) { hue = "red"; hueNuance="brown" }
     else{ hue = "red"; hueNuance=null }
     
   }
-  else if ( numberIsInRange(h, "6-9") )    { //orange-ish red
+  else if ( numberIsInRange(h, "4-6") )    { //orange-ish red
 
-    if ( (saturation !== "grey") && (lightness !== "black") && (l < 70 || s < 50) ){ hue = "brown"; hueNuance="orange" }
+    if ( (saturation !== "grey") && (lightness !== "black") && (l < 35 || s < 50) ){ hue = "brown"; hueNuance="orange" }
     else{ hue = "red"; hueNuance="orange" }
     
   }
-  else if ( numberIsInRange(h, "9-12") )   { //red-ish orange
+  else if ( numberIsInRange(h, "7-12") )   { //red-ish orange
     
-    if ( (saturation !== "grey") && (lightness !== "black") && (l < 70 || s < 50) ){ hue = "orange"; hueNuance="brown" }
-    else if ( l < 48 || s < 50 ) { hue = "brown"; hueNuance="orange" }
+    if ( (saturation !== "grey") && (lightness !== "black") && (l < 35 || s < 50) ){ hue = "brown"; hueNuance="orange" }
+    else if ( (l < 40 && s < 90) || (l < 60 && s < 40) ) { hue = "orange"; hueNuance="brown" }
     else{ hue = "orange"; hueNuance="red"  }
     
   }
   else if ( numberIsInRange(h, "13-35") )   { // orange
 
     if ( (saturation !== "grey") && (lightness !== "black") && (l < 35 || s < 50) ) { hue = "brown"; hueNuance="orange" }
-    // else if ( l >= 60 || s < 90 ) { hue = "orange"; hueNuance="brown" }
+    else if ( (l < 40 && s < 90) || (l < 60 && s < 40) ) { hue = "orange"; hueNuance="brown" }
     else{ hue = "orange"; hueNuance=null }
   }
   else if ( numberIsInRange(h, "36-42") )   { //yellow-ish orange
