@@ -316,4 +316,4 @@ var naevner = function naevner(color, approximationSuffix) {
 };
 
 export default naevner;
-//# sourceMappingURL=naevner.esm.js.map
+//# sourceMappingURL=naevner.js.esm.js.map

@@ -320,4 +320,4 @@ var naevner = function naevner(color, approximationSuffix) {
 };
 
 exports.default = naevner;
-//# sourceMappingURL=naevner.cjs.development.js.map
+//# sourceMappingURL=naevner.js.cjs.development.js.map
