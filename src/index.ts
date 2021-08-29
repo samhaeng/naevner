@@ -1,8 +1,8 @@
 /*! naevner v1.0.0 | MIT */
-const naevner = (color, approximationSuffix="ish") => {
-  let colorInRGB,
-      colorInHSL,
-      lightness,
+type Naevner = (color: string, approximationSuffix?: string) => string;
+
+const naevner: Naevner = (color, approximationSuffix = "ish") => {
+  let lightness,
       lightnessToPrint,
       hue,
       hueWithNuanceToPrint,
@@ -14,8 +14,8 @@ const naevner = (color, approximationSuffix="ish") => {
       parsedColor;
 
   // hexToRGB + RGBToHSL functions from https://css-tricks.com/converting-color-spaces-in-javascript/
-  function hexToRGB(h) {
-    let r = 0, g = 0, b = 0;
+  function hexToRGB(h: string): { r: number, g: number, b: number } {
+    let r: string = '0', g: string = '0', b: string = '0';
 
     if (h.length == 4) {
       r = "0x" + h[1] + h[1];
@@ -28,11 +28,15 @@ const naevner = (color, approximationSuffix="ish") => {
       b = "0x" + h[5] + h[6];
     }
 
-    return {r,g,b}
+    return { 
+      r: parseInt(`${r}`), 
+      g: parseInt(`${g}`), 
+      b: parseInt(`${b}`) 
+    }
   }
 
-  function RGBToHSL(r,g,b) {
-  // Make r, g, and b fractions of 1
+  function RGBToHSL(r: any, g: any, b: any): { h: number, s: number, l: number } {
+    // Make r, g, and b fractions of 1
     r /= 255;
     g /= 255;
     b /= 255;
@@ -75,10 +79,14 @@ const naevner = (color, approximationSuffix="ish") => {
     s = +(s * 100).toFixed(1);
     l = +(l * 100).toFixed(1);
 
-    return {h:h,s:s,l:l};
+    return {
+      h: Math.floor(h),
+      s: Math.floor(s),
+      l: Math.floor(l),
+    };
   }
 
-  const numberIsInRange = (colorAspectValue, range) => {
+  const numberIsInRange = (colorAspectValue: number, range: string) => {
     var fullRange = range.indexOf("-"); 
     var startOfRange = parseInt(range.substr(0, fullRange));
     var endOfRange = parseInt(range.substr(fullRange + 1)); 
@@ -93,12 +101,8 @@ const naevner = (color, approximationSuffix="ish") => {
   parsedColor = /^#.*/g.test(color) ? color : "#" + color;
 
   //assess color code:
-  colorInRGB = hexToRGB(parsedColor,true);
-  colorInHSL = RGBToHSL(colorInRGB.r,colorInRGB.g,colorInRGB.b);
-
-  let h = parseInt(colorInHSL.h), 
-      s = parseInt(colorInHSL.s),
-      l = parseInt(colorInHSL.l);
+  const colorInRGB = hexToRGB(parsedColor);
+  const { h, s, l } = RGBToHSL(colorInRGB.r, colorInRGB.g, colorInRGB.b);
 
   //reset values
   lightness = null;
@@ -245,3 +249,5 @@ const naevner = (color, approximationSuffix="ish") => {
   return colorDescription;
 
 }
+
+export default naevner;
