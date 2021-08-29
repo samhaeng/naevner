@@ -32,7 +32,14 @@
     "trailingComma": "es5"
   },
   "name": "naevner.js",
-  "author": "Filip Jakobsen",
+  "contributors": [
+    {
+      "name" : "Filip Jakobsen"
+    },
+    {
+      "name" : "Rasmus Wølk"
+    }
+  ],
   "module": "dist/naevner.esm.js",
   "size-limit": [
     {
