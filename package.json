@@ -31,8 +31,8 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "naevner",
-  "author": "Rasmus Wølk",
+  "name": "naevner.js",
+  "author": "Filip Jakobsen",
   "module": "dist/naevner.esm.js",
   "size-limit": [
     {
