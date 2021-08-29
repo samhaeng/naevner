@@ -240,7 +240,7 @@ const naevner: Naevner = (color, approximationSuffix = "ish") => {
   }
 
   //Tinted grey - combine hue, lightness, saturation to determine color name:
-  else if(saturation == "grey"){ colorDescription = `${lightnessToPrint} ${hue}${approximationSuffixToPrint} ${saturation}`; }
+  else if(saturation == "grey"){ colorDescription = `${lightnessToPrint}${hue}${approximationSuffixToPrint} ${saturation}`; }
 
   //Any other color - combine hue, lightness, saturation to determine color name:
   else{ colorDescription = `${lightnessToPrint}${saturationToPrint}${hueWithNuanceToPrint}`; }
