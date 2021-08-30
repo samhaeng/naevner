@@ -148,14 +148,14 @@ const naevner: Naevner = (color, approximationSuffix = "ish") => {
   else if ( numberIsInRange(h, "7-12") )   { //red-ish orange
     
     if ( (saturation !== "grey") && (lightness !== "black") && (l < 35 || s < 50) ){ hue = "brown"; hueNuance="orange" }
-    else if ( (l < 40 && s < 90) || (l < 60 && s < 40) ) { hue = "orange"; hueNuance="brown" }
+    else if ( (l < 40 && s < 90) || (l < 45 && s < 70) ) { hue = "orange"; hueNuance="brown" }
     else{ hue = "orange"; hueNuance="red"  }
     
   }
   else if ( numberIsInRange(h, "13-35") )   { // orange
 
     if ( (saturation !== "grey") && (lightness !== "black") && (l < 35 || s < 50) ) { hue = "brown"; hueNuance="orange" }
-    else if ( (l < 40 && s < 90) || (l < 60 && s < 40) ) { hue = "orange"; hueNuance="brown" }
+    else if ( (l < 40 && s < 90) || (l < 45 && s < 70) ) { hue = "orange"; hueNuance="brown" }
     else{ hue = "orange"; hueNuance=null }
   }
   else if ( numberIsInRange(h, "36-42") )   { //yellow-ish orange
