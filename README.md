@@ -52,7 +52,7 @@
   ```
 
  # Other color repositories
- The purpose of this plugin is to provide short, unambiguous descriptions using commonly used color terms. For some situations, different types of color descriptions may be more useful. For those sitations, you may want to have a look at the following repositories. These are provided for your convenience and are not associated with this repository or Samhæng:
+ The purpose of this plugin is to provide short, unambiguous descriptions using commonly used color terms. For some situations, different types of color descriptions may be more useful. For those situations, you may want to have a look at the following repositories. These are provided for your convenience and are not associated with this repository or Samhæng:
  * https://github.com/words/color-description
  * https://github.com/meodai/color-names
  
