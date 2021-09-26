@@ -14,10 +14,24 @@
  * Naevner.js in use on a website — video demonstration of screenreader usage: [Naevner.js screenreader demo video](https://youtu.be/8kn6D_BuHYg)
  
  ## Getting started
+ 
+ ### Minified code
  Include the [minified code](https://github.com/samhaeng/naevner/blob/main/naevner-min.js)
+
+ ### Install with yarn
+ ```
+ yarn add naevner
+ ```
+
+### Install with NPM
+ ```
+ npm install naevner
+ ```
  
  ## How to use
  ```javascript
+import naevner from 'naevner'
+
  naevner(color);
  ```
  
