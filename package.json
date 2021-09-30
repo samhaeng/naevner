@@ -31,7 +31,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "naevner",
+  "name": "@samhaeng/naevner",
   "contributors": [
     {
       "name": "Filip Jakobsen"

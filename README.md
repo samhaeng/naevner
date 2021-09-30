@@ -20,17 +20,17 @@
 
  ### Install with yarn
  ```
- yarn add naevner
+ yarn add @samhaeng/naevner
  ```
 
 ### Install with NPM
  ```
- npm install naevner
+ npm install @samhaeng/naevner
  ```
  
  ## How to use
  ```javascript
-import naevner from 'naevner'
+import naevner from '@samhaeng/naevner'
 
  naevner(color);
  ```
