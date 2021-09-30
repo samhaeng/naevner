@@ -15,7 +15,7 @@
  
  ## Getting started
  
- ### Minified code
+ ### Install in a browser
  Include the [minified code](https://github.com/samhaeng/naevner/blob/main/naevner-min.js)
 
  ### Install with yarn
